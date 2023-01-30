@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+local turn_of_gui = true
 
 local Loading = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -30,7 +27,6 @@ local EndSequence = Instance.new("Frame")
 
 Loading.Name = "Loading"
 Loading.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Loading.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Loading.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
@@ -38,6 +34,7 @@ MainFrame.Parent = Loading
 MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 MainFrame.BorderSizePixel = 0
 MainFrame.Size = UDim2.new(1, 0, 1, 0)
+MainFrame.ZIndex = 0
 
 Title.Name = "Title"
 Title.Parent = MainFrame
@@ -154,7 +151,7 @@ EndSequence.Size = UDim2.new(1, 0, 1, 0)
 
 -- Scripts:
 
-local function CZHPE_fake_script() -- Dots.Dots 
+local function FPZH_fake_script() -- Dots.Dots 
 	local script = Instance.new('LocalScript', Dots)
 
 	while true do
@@ -172,8 +169,8 @@ local function CZHPE_fake_script() -- Dots.Dots
 		script.Parent.Dot3.InsideDot:TweenSize(UDim2.new(0,0,0,0), "In", "Sine", 0.25, true)
 	end
 end
-coroutine.wrap(CZHPE_fake_script)()
-local function MGZQHGT_fake_script() -- MainFrame.Manager 
+coroutine.wrap(FPZH_fake_script)()
+local function BKWCYU_fake_script() -- MainFrame.Manager 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local bar = script.Parent.Bar
@@ -194,8 +191,8 @@ local function MGZQHGT_fake_script() -- MainFrame.Manager
 	wait(3)
 	script.Parent.Parent.Parent.Loading:Destroy()
 end
-coroutine.wrap(MGZQHGT_fake_script)()
-local function XZRVJR_fake_script() -- Percentage.Percentage 
+coroutine.wrap(BKWCYU_fake_script)()
+local function NJYHW_fake_script() -- Percentage.Percentage 
 	local script = Instance.new('LocalScript', Percentage)
 
 	wait(5)
@@ -204,8 +201,8 @@ local function XZRVJR_fake_script() -- Percentage.Percentage
 		wait(0.2)
 	end
 end
-coroutine.wrap(XZRVJR_fake_script)()
-local function DDYAA_fake_script() -- Loading.DefaultUI 
+coroutine.wrap(NJYHW_fake_script)()
+local function EROYOS_fake_script() -- Loading.DefaultUI 
 	local script = Instance.new('LocalScript', Loading)
 
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
@@ -213,4 +210,27 @@ local function DDYAA_fake_script() -- Loading.DefaultUI
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
 end
-coroutine.wrap(DDYAA_fake_script)()
+coroutine.wrap(EROYOS_fake_script)()
+
+
+
+
+
+
+while turn_of_gui == true do
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Bottom.Visible = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Left.Visible = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Visible = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts.Visible = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.ServerBoosts.Visible = false
+wait()
+end
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
