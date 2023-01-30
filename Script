@@ -17,25 +17,16 @@ Frame.Size = UDim2.new(1, 0, 1, 0)
 Frame.Parent = ScreenGui
 
 TextLabel.Font = Enum.Font.Unknown
-TextLabel.Text = "Faitz V1 HUB"
+TextLabel.Text = "Ice Hub"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 47
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderColor3 = Color3.fromRGB(27.000000290572643, 42.000001296401024, 53.00000064074993)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0.00892857183, 0)
+TextLabel.Position = UDim2.new(0.03534081, 0, 0.440561211, 0)
 TextLabel.Size = UDim2.new(0, 1356, 0, 85)
 TextLabel.Parent = Frame
 
-TextLabel1.Font = Enum.Font.LuckiestGuy
-TextLabel1.Text = "Discord.gg/v6p4e4njzX"
-TextLabel1.TextColor3 = Color3.fromRGB(97.00000941753387, 173.00000488758087, 255)
-TextLabel1.TextSize = 14
-TextLabel1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel1.BorderSizePixel = 0
-TextLabel1.Position = UDim2.new(0.415904969, 0, 0.132653058, 0)
-TextLabel1.Size = UDim2.new(0, 228, 0, 72)
-TextLabel1.Parent = Frame
 
 ImageLabel.Image = "rbxassetid://12266665594"
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
