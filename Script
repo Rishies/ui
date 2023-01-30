@@ -219,7 +219,7 @@ coroutine.wrap(EROYOS_fake_script)()
 
 while turn_of_gui == true do
     local times = 0
-    if times >= 100 then
+    if times >= 15 then
         turn_of_gui = false
     end
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Bottom.Visible = false
