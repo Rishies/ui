@@ -217,11 +217,7 @@ coroutine.wrap(EROYOS_fake_script)()
 
 
 
-while turn_of_gui == true do
-    local times = 0
-    if times >= 15 then
-        turn_of_gui = false
-    end
+
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Bottom.Visible = false
 
 game:GetService("Players").LocalPlayer.PlayerGui.Main.Left.Visible = false
@@ -233,8 +229,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts.Visible = false
 game:GetService("Players").LocalPlayer.PlayerGui.Main.ServerBoosts.Visible = false
 wait()
 
-local times = times + 1
-end
 -- Gui to Lua
 -- Version: 3.2
 
