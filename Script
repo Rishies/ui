@@ -228,9 +228,3 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts.Visible = false
 
 game:GetService("Players").LocalPlayer.PlayerGui.Main.ServerBoosts.Visible = false
 wait()
-
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
