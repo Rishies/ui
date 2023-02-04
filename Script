@@ -82,3 +82,4 @@ game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts.Visible = false
 
 game:GetService("Players").LocalPlayer.PlayerGui.Main.ServerBoosts.Visible = false
 wait()
+game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.Visible = false
